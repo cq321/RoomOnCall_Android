@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onjection.roomoncall"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- <permission -->
+    <!-- android:name="com.emobi.callerlocation.permission.MAPS_RECEIVE" -->
+    <!-- android:protectionLevel="signature" /> -->
+
+    <uses-permission android:name="com.emobi.callerlocation.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Required to show current location -->
+
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <meta-data
+            android:name="payu_merchant_id"
+            android:value="Y2B4k8" />
+        <meta-data
+            android:name="payu_merchant_salt"
+            android:value="c7H2Lm4J" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBSxA6iTPltizBZ0v3kLLi0YMePO1xDn6o" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BookedHotel"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RoomDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainSearchHotel"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CalenderView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.onjection.myaccountDetails.Login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchedHoteList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HotelDescription"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.onjection.booking.RoomDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.onjection.booking.UserPaymentDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Spalsh"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.onjection.map.HotelAddressOnMap"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ContactFeedBack"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.payu.sdk.PaymentOptionsActivity"
+            android:configChanges="orientation|keyboard|screenSize"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.payu.sdk.ProcessPaymentActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.onjection.booking.PaymentDetails"
+            android:configChanges="orientation|keyboard|screenSize"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.onjection.myaccountDetails.Registeration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.onjection.booking.RoomBookingForm"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.onjection.booking.BookingAllHistoryDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ThankYou"
+            android:label="@string/title_activity_thank_you" >
+        </activity>
+    </application>
+
+   
+
+</manifest>

@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#DA0205"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtRegisterEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:fontFamily="sans-sarif"
+                android:hint="EmailId"
+                
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtRegisterUsername"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:fontFamily="sans-sarif"
+                android:hint="UserName"
+                
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtRegisterPass"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:fontFamily="sans-sarif"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edtRegisterFirstNm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="sans-sarif"
+                    android:hint="FirstName"
+                    android:inputType="textPersonName|textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edtRegisterLastNm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="sans-sarif"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName|textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edtRegisteraddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="sans-sarif"
+                    android:hint="Address"
+                    android:inputType="textPersonName|textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edtRegisteraddress2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="sans-sarif"
+                    android:hint="Address2"
+                    android:inputType="textPersonName|textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edtRegistercity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="sans-sarif"
+                    android:hint="City"
+                    android:inputType="textPersonName|textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edtRegisterstate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="sans-sarif"
+                    android:hint="State"
+                    android:inputType="textPersonName|textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edtRegisterzipcode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="sans-sarif"
+                    android:hint="ZipCode"
+                    android:inputType="phone"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edtRegisterContNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="sans-sarif"
+                    android:hint="Contact Number"
+                    android:inputType="phone"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="247.33dp"
+            android:layout_height="50dp"
+            android:background="@drawable/red_button"
+            android:text="Register"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txtSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/txtallreadysignIn"
+            android:textColor="#446B9F"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

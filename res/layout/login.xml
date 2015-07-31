@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/loginbg"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/loginheader" 
+            android:layout_marginBottom="25dp">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/findyouroomtext" >
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/lnrLoginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edtLoginEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="sans-sarif"
+                    android:hint="EmailId"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="vikas"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edtLoginPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="sans-sarif"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="vikas@123"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#DC675B"
+                    android:text="Login"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btnregister"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="#DC675B"
+                    android:text="SignUp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtforgotpasswrd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/forgot_password"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Roomon Call</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_booked_room">Booked Room</string>
+    <string name="title_activity_room_details">Room Details</string>
+    <string name="title_activity_main_search_hotel">MainSearchHotel</string>
+    <string name="spinearcity">Select City</string>
+    <string name="spinearArea">Select Area</string>
+    <string name="spinearChild">Child</string>
+    <string name="spinearAdult">Adult</string>
+    <string name="serach">Serach</string>
+    <string name="title_activity_calender_view">CalenderView</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_search_list_details">Search List Details</string>
+    <string name="title_activity_hotel_description">Hotel Details</string>
+    <string name="title_activity_spalsh">Spalsh</string>
+    <string name="forgot_password"><u>Forgot password ?</u></string>
+    <string name="number_of_Hotel">num</string>
+    <string name="BookingDetails">Room Details</string>
+    <string name="roomtypecount">Room Available</string>
+    <string name="roomtype">Room Type</string>
+    <string name="txtallreadysignIn">Already have an account ! <u>Clicl Here</u></string>
+    <string name="username">Name</string>
+    <string name="UserDeatils">User Details</string>
+    <string name="user_id">User Id</string>
+    <string name="user_email">Email</string>
+    <string name="user_comp">Compnay</string>
+    <string name="user_add">Address</string>
+    <string name="user_mob">Mobile No</string>
+    <string name="userroomtype">Room Type</string>
+    <string name="usernoOfroom">No Of Room</string>
+    <string name="userpaynow">Pay Now</string>
+    <string name="HotelPhone">Phone:</string>
+    <string name="HotelEMail">Email Id:</string>
+    <string name="hotelFacility">Facility</string>
+    <string name="AddressHotel">Address</string>
+
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Hotels</item>
+        <item>Contact Us</item>
+        <item>My Account</item>
+        <item>Sing Out</item>
+        <item>Sign In</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/home</item>
+        <item>@drawable/hotel</item>
+        <item>@drawable/contact</item>
+        <item>@drawable/account</item>
+        <item>@drawable/sign_out</item>
+        <item>@drawable/sign_out</item>
+    </array>
+
+    <string name="title_activity_hotel_address_on_map">HotelAddressOnMap</string>
+    <string name="title_activity_thank_you">ThankYou</string>
+
+</resources>
